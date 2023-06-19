@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sigin
+	</title>
+	<link rel="stylesheet" type="text/css" href="style_sigin.css">
+</head>
+
+<body>
+
+<form action="/auth/register" method="POST">
+	<h2>Sigin</h2>
+	<img src="/images/naruto-icon.png" alt="user">
+	<input type="text" name="username" placeholder="Username">
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password">
+	
+	<input type="submit" value="Login">
+
+</form>
+
+<div>
+    {{#if message}}
+    <h4>{{message}}</h4>
+    {{/if}}
+</div>
+
+</body>
+</html>
